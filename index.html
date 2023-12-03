@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Hunter</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!--It is nav bar, and it's contains food logo, company name, and search bar with search button-->
+    <nav>
+        
+        <div id="nav-heading">
+            <div id="companyName"><h1>FOOD HUNTER</h1></div>
+            <div id="quickLinks">
+                <div>
+                    <a href="">Category</a>
+                </div>
+                <div>
+                    <a href="">About Us</a>
+                </div>
+                <div>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            
+        </div>
+        <div id="SearchBarContainer">
+            <input type="text" placeholder="Search For Category" id="searchBar">
+            <button id="searchCategoryButton"> Search</button> 
+        </div>
+        <p id="Slogen"> <b>H</b>arvesting <b>U</b>nique <b>N</b>ourishment, <b>T</b>aste, and <b>E</b>xquisite <b>R</b>ecipes</p>
+    </nav>
+
+    <!-- It is header part which shows the user what is the random dish for today -->
+
+    <header>
+        <div id="rendom">
+            <div>
+                <h1 class="headerText" >YOUR</h1>
+                <h1 class="headerText">TODAY'S</h1>
+                <h1 class="headerText">MEAL</h1>
+            </div>
+            <div id="foodNameImgContainer">
+                <div id="randomFood">
+                    
+                </div>
+                <div id="model1" class="modal">
+                    <div class="modalContent card4">
+                        <header class="container teal"> 
+                            <span onclick="closeModal()" class="button displayTopright">&times;</span>
+                            <h2 class="modalHeading">Ingredient</h2> 
+                        </header>
+                        <div class="container" id="ingredientList">
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- It is an extra section initially not shown on the main webpage, but as the user clicks on the search button, some suggestions appear.-->
+
+    <section>
+        
+        <div id="searchResult"></div>
+    </section>
+
+
+    <!-- footer of the website -->
+
+    <footer id="footer">
+        <p id="footer-text">Made by Anuj with Love </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
